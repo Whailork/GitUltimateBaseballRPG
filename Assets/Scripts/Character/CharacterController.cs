@@ -65,7 +65,7 @@ public class CharacterController : MonoBehaviour
 
     private void FixedUpdate()
     {
-
+        Debug.Log($"Cash : {GameManager.GetGameManager().GetSubsystem<DataSubsystem>().money}$");
         rb.velocity = new Vector2(horizontal*speed, rb.velocity.y);
         
         if (rb.velocity.y <= 0 && Physics2D.Raycast(transform.position, Vector3.down, 0.1f, LayerMask.GetMask("Floor")))

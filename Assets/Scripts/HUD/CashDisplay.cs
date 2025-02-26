@@ -20,8 +20,9 @@ public class CashDisplay : MonoBehaviour
 
     private void UpdateCashText()
     {
+        
 
-        GetComponent<TextMeshProUGUI>().text = $"Cash : {GameValues.GetGameValues().Cash}$";
+        GetComponent<TextMeshProUGUI>().text = $"Cash : {GameManager.GetGameManager().GetSubsystem<DataSubsystem>().money}$";
 
     }
 }
