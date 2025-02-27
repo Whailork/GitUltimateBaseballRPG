@@ -26,8 +26,8 @@ public class ThrowAbility : Ability
         
 
         GameObject ball = MonoBehaviour.Instantiate(charController.ballPrefab, spawnPos, Quaternion.identity);
-        
-        Vector3 target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        Vector3 target = charController.target;
         BallController controller = ball.GetComponent<BallController>();
         controller.SetDirection(target);
     }

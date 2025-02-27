@@ -16,6 +16,7 @@ public class PlayerMovement : CharacterController
 
     private PlayerInputActions playerInputActions;
     private InputAction movement;
+    private InputAction aim;
     private bool aimsLeft = false;
 
     private void Awake()
@@ -29,6 +30,8 @@ public class PlayerMovement : CharacterController
         GetComponent<AbilitySystemComponent>().abilityRemoved += DisableAbility;
         movement = playerInputActions.Player.Movement;
         movement.Enable();
+        aim = playerInputActions.Player.Aim;
+        aim.Enable();
         
         playerInputActions.Player.Jump.performed += Jump;
         playerInputActions.Player.Jump.Enable();
@@ -84,7 +87,17 @@ public class PlayerMovement : CharacterController
         animator.SetFloat("movementX", horizontal);
         armAnimator.SetFloat("movementX",horizontal);
         
-        Vector3 target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 aimValue = aim.ReadValue<Vector2>();
+        aimValue *= 300;
+        if (aimValue != Vector2.zero)
+        {
+            target.x = transform.position.x + (aimValue.x);
+            target.y = transform.position.y + (aimValue.y);
+            target.z = transform.position.z;
+        }
+        
+        
         if (target.x < transform.position.x)
         {
             if (!aimsLeft)
@@ -110,6 +123,7 @@ public class PlayerMovement : CharacterController
     private void OnDisable()
     {
         movement.Disable();
+        aim.Disable();
         playerInputActions.Player.Jump.Disable();
         playerInputActions.Player.Throw.Disable();
         playerInputActions.Player.Bat.Disable();

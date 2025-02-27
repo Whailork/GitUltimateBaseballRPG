@@ -14,6 +14,7 @@ public class CharacterController : MonoBehaviour
     public GameObject Arm;
     public Animator armAnimator;
 
+    public Vector3 target;
     public GameObject ballSpawn;
 
     public float horizontal;

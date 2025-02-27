@@ -47,7 +47,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 54
+  controlID: 903
   draggingID: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 55
+  controlID: 904
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 56
+  controlID: 905
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 44
+  controlID: 906
   draggingID: 0
 --- !u!114 &9
 MonoBehaviour:
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: AnimatorControllerTool
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -243,15 +243,15 @@ MonoBehaviour:
     y: 0
     width: 903.2
     height: 415.2
-  m_MinSize: {x: 202, y: 221}
+  m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 16}
   - {fileID: 14}
   - {fileID: 13}
-  m_Selected: 0
-  m_LastSelected: 2
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -443,14 +443,14 @@ MonoBehaviour:
     - {fileID: 8364960834462695697, guid: 5ddb0b3635c8bbe438e9e92bbe56f464, type: 2}
     - {fileID: 1439096513303519666, guid: e14b209112e7e13478f17bd828c52ccd, type: 2}
     m_ValueSerializationHelper:
-    - e00: 0.72521174
+    - e00: 0.8339935
       e01: 0
       e02: 0
-      e03: 199.66211
+      e03: 160.61142
       e10: 0
-      e11: 0.72521174
+      e11: 0.8339935
       e12: 0
-      e13: -18.10698
+      e13: -48.78302
       e20: 0
       e21: 0
       e22: 1
@@ -459,14 +459,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.88718736
+    - e00: 0.7435052
       e01: 0
       e02: 0
-      e03: 5.665497
+      e03: -7.305176
       e10: 0
-      e11: 0.88718736
+      e11: 0.7435052
       e12: 0
-      e13: -21.756027
+      e13: 2.8762817
       e20: 0
       e21: 0
       e22: 1
@@ -492,9 +492,9 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: e14b209112e7e13478f17bd828c52ccd, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: 5ddb0b3635c8bbe438e9e92bbe56f464, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: -2691585150457081850, guid: e14b209112e7e13478f17bd828c52ccd, type: 2}
+  - m_Target: {fileID: 8364960834462695697, guid: 5ddb0b3635c8bbe438e9e92bbe56f464, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -544,9 +544,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f8760000
+      m_SelectedIDs: c6e4ffff
       m_LastClickedID: 0
-      m_ExpandedIDs: fafaffff
+      m_ExpandedIDs: a2faffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -926,9 +926,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -4.2026668, y: 8.242244, z: -28.826576}
+    m_Target: {x: 0.9139065, y: 5.6722026, z: -28.766039}
     speed: 2
-    m_Value: {x: -4.2026668, y: 8.242244, z: -28.826576}
+    m_Value: {x: 0.9139065, y: 5.6722026, z: -28.766039}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -978,9 +978,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 15.186052
+    m_Target: 9.133633
     speed: 2
-    m_Value: 15.186052
+    m_Value: 9.133633
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1050,7 +1050,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Subsystems
+    - Assets/Animations/Player/Arm
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1058,16 +1058,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 73
   m_LastFolders:
-  - Assets/Scripts/Subsystems
+  - Assets/Animations/Player/Arm
   m_LastFoldersGridSize: 73
   m_LastProjectPath: D:\gitKrakenRepos\GitUltimateBaseballRPG
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 85.400024}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fa740000fc740000fe7400000075000090760000
+    scrollPos: {x: 0, y: 31}
+    m_SelectedIDs: 98760000
+    m_LastClickedID: 30360
+    m_ExpandedIDs: 000000000a7500000c7500000e75000010750000a0760000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1095,7 +1095,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fa740000fc740000fe74000000750000
+    m_ExpandedIDs: 000000000a7500000c7500000e75000010750000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
